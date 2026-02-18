@@ -1,4 +1,4 @@
-package cat.inslaferreria.dames.business.model;
+package cat.inslaferreria.dames.model;
 
 import java.util.Date;
 

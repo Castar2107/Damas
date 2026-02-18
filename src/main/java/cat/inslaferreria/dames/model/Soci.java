@@ -1,4 +1,4 @@
-package cat.inslaferreria.dames.business.model;
+package cat.inslaferreria.dames.model;
 
 import java.util.Date;
 
@@ -22,6 +22,8 @@ public class Soci {
 	public Soci(String nom, String email) {
 		this.nom = nom;
 		this.email = email;
+		
+		// TODO Assignar data local a dataAlta
 	}
 
 	public String getId() {
@@ -52,6 +54,7 @@ public class Soci {
 		return dataAlta;
 	}
 
+	// Necessari??
 	public void setDataAlta(Date dataAlta) {
 		this.dataAlta = dataAlta;
 	}
