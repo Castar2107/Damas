@@ -3,6 +3,7 @@ package cat.inslaferreria.dames.model;
 import java.util.Date;
 
 import org.springframework.data.annotation.*;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document (collection = "socis")
@@ -10,6 +11,7 @@ public class Soci {
 	@Id
 	String id;
 	String nom;
+	@Indexed(unique = true)
 	String email;
 	Date dataAlta;
 	int numPartides;
