@@ -1,6 +1,7 @@
 package cat.inslaferreria.dames.repository;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
@@ -11,5 +12,6 @@ import cat.inslaferreria.dames.model.Taula;
 
 @Repository
 public interface ReservaRepository extends MongoRepository<Reserva, String> {
-	Optional<Reserva> findReservaByTaulaAndDataReserva(Taula taula, Date dataReserva);
+	Optional<Reserva> findByTaulaAndDataReserva(Taula taula, Date dataReserva);
+	List<Reserva> findByDataReserva(Date dataReserva);
 }

@@ -16,9 +16,8 @@ public class Reserva {
 	
 	public Reserva() {}
 	
-	public Reserva(Soci jugador1, Soci jugador2, Taula taula, Date dataReserva) {
+	public Reserva(Soci jugador1, Taula taula, Date dataReserva) {
 		this.jugador1 = jugador1;
-		this.jugador2 = jugador2;
 		this.taula = taula;
 		this.dataReserva = dataReserva;
 	}

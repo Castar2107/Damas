@@ -10,4 +10,5 @@ import cat.inslaferreria.dames.model.Soci;
 @Repository
 public interface SociRepository extends MongoRepository<Soci, String>{
 	Optional<Soci> findByEmail(String email);
+	Optional<Soci> findById (String id);
 }
